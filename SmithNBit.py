@@ -1,10 +1,10 @@
 class SmithNBit:
     def __init__(self, b):
-        self.SmitNBit(b)
         self.lower = 0
         self.higher = 0
         self.counter = 0
         self.threshold = 0
+        self.SmitNBit(b)
 
     def SmitNBit(self, b):
         if b == 1:
