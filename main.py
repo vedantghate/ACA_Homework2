@@ -33,18 +33,9 @@ if __name__ == '__main__':
         else:
             not_taken += 1
 
-        # addr = ""
-        # for i in range(len(x)-1):
-        #     addr += x[i]
-        # while len(addr) != 8:
-        #     addr = "0"+addr
-
         uaddr = int(x.rstrip().split(" ")[0], 16)
         branches.append(branch)
         addresses.append(uaddr)
 
     bp = BranchPredictor.BranchPredictor(predictor, k, b, m2, m1, n, tracefile)
     bp.execute(addresses, branches)
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
